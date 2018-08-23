@@ -5,38 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign | Up</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <h1>Sign Up</h1>
-    <form>
-       <div>
-          <label for="firstname">First Name : </label>
-          <input type="text" name="firstname" id="firstname" placeholder="Enter First Name">
-       </div>
-       
-       <div>
-            <label for="lastname">Last Name : </label>
-            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name">
-       </div>
-       
-       <div>
-            <label for="email">Email : </label>
-            <input type="email" name="email" id="email" placeholder="Enter Email">
-       </div>
-
-       <div>
-            <label for="password">Password : </label>
-            <input type="password" name="password" id="password" placeholder="Enter password">
-       </div>
-
-       <div>
-            <label for="repassword">Re-Password : </label>
-            <input type="password" name="repassword" id="repassword" placeholder="Repeat password">
-       </div>
-
-       <div>
-           <button type="submit">Regist</button>
-       </div>
-    </form>
+<body id="signup">
+        
+    <div >
+            <form class="page-form">
+                    <div class="row">
+                         <h1>Sign Up</h1>
+                    </div> 
+                <div class="row"> 
+                    <label for="firstname" class="col-3">Display Name  </label>
+                   <input class="col-8" type="text" name="name" id="firstname" placeholder="Enter Display Name">
+                </div>
+                
+                <div class="row">
+                     <label for="email" class="col-3">Email  </label>
+                     <input class="col-8" type="email" name="email" id="email" placeholder="Enter Email">
+                </div class="row">
+         
+                <div class="row">
+                     <label for="password" class=~"col-3">Password  </label>
+                     <input class="col-8" type="password" name="password" id="password" placeholder="Enter password">
+                </div class="row">
+         
+                <div class="row">
+                     <label for="repassword" class="col-3">Re-Password </label>
+                     <input class="col-8" type="password" name="repassword" id="repassword" placeholder="Repeat password">
+                </div>
+         
+                <div class="row">
+                     <input type="submit" value="Submit">
+                </div>
+               
+             </form>
+           
+     
+      
+     
+     
+    </div>
+        
 </body>
 </html>

@@ -1,0 +1,138 @@
+
+/* buttons */
+
+.btn{
+    padding: 10px;
+    border: 1px;
+   
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ .big{
+    width: 500x;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.small{
+    width: 200x;
+    line-height: 20px;
+    font-size: 10px;
+}
+ .medium{
+   width: 700x;
+   line-height: 40px;
+   font-size: 15px;
+}
+
+/* colours */
+
+.success{
+  color: rgb(31, 214, 98);
+}
+.bg-success{
+    background-color: rgb(31, 214, 98);
+    color: white;
+  }
+.info{
+
+}
+
+.danger{
+
+}
+
+.default{
+
+}
+.primary{
+    color: #0192ca;
+}
+.bg-primary{
+    background: #0192ca;
+  color: white;
+  }
+
+/* dropdown */
+.dropdown{
+
+}
+
+.dropdown-items{
+
+}
+
+
+/* compononts */
+
+.page-form{
+    border: solid 1px ghostwhite;
+    background-color: whitesmoke;
+    box-shadow: 0 3px 3px 0 grey;
+    padding: 20px;
+    margin: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For medium phones: */
+    .page-form{
+     
+       
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (max-width: 700px) {
+    /* For medium phones: */
+    .page-form{
+     
+       
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+input[type=text], input[type=password], input[type=email] {
+    
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input:hover{
+    background-color: rgba(216, 213, 213, 0.637);
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+form div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#signup{
+    width:100%;
+    background-image: url("../images/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
