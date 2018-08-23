@@ -1,5 +1,7 @@
 body{
-    background-color: aliceblue;
+    font-family: Arial;
+margin: 0;
+    background: #f1f1f1;
 }
 .container{
   padding: 20px;
