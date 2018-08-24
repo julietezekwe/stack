@@ -12,15 +12,13 @@
     <header>
             <nav class="topnav">
                     <ul>
-                       <a href="#">Stackoverflow Lite</a>
+                       <a href="index.html">Stackoverflow Lite</a>
                     </ul>
                        
                     <ul class="right">
-                        
-                        <a href="#">Home</a>
-                        <a href="#" >Profile</a>
-                        <a href="#" >Login</a>
                         <a href="#">Sign up</a>
+                        <a href="login.html" >Login</a>
+                        <a href="profile.html" >Profile</a>                       
                     </ul>
                  
                 </nav>
@@ -51,10 +49,13 @@
                      <label for="repassword" class="col-3">Re-Password </label>
                      <input class="col-8" type="password" name="repassword" id="repassword" placeholder="Repeat password">
                 </div>
-         
+                
                 <div class="row">
-                     <input type="submit" value="Submit">
+                    <p class="col-4">Already a user? <a href="login.html">Login here</a></p>
+                    <button type="submit" value="Submit" class="btn col-6">Submit</button>
+                   
                 </div>
+                
                
              </form>
            
