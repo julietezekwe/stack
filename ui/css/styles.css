@@ -1,29 +1,43 @@
 
-/* buttons */
 
-.btn{
-    padding: 10px;
-    border: 1px;
-   
-    color: white;
-    border-radius: 5px;
+
+*{
+    color: #343946;
+    text-align: justify;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #4CAF50;
+}
+/* buttons */
+  
+ .btn{
+    display: inline-block;
+    padding: 15px 23px;
+    font-size: 24px;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 13px;
+    box-shadow: 0 7px #999;
+}
+
+.btn:hover {background-color: #3e8e41}
+  
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
 }
  .big{
-    width: 500x;
-    line-height: 60px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
-.small{
-    width: 200x;
-    line-height: 20px;
-    font-size: 10px;
-}
  .medium{
-   width: 700x;
-   line-height: 40px;
-   font-size: 15px;
+    font-size: 30px;
 }
 
 /* colours */
@@ -179,6 +193,35 @@ form div {
     background-color: #ddd;
     color: black;
 }
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 /* Footer */
@@ -210,3 +253,32 @@ form div {
 .topnav .right a {
     float: right;
 }
+
+
+/* pagination */
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
