@@ -1,52 +1,60 @@
 
 
-
+body{
+    background-color: #dbdbdf;
+   
+}
 *{
     color: #343946;
     text-align: justify;
+    
 }
 h1, h2, h3, h4, h5, h6{
-    color: #4CAF50;
+    color: rgb(25, 149, 173);
+    /* color: rgb(25, 34, 27, 0.7); */
 }
 /* buttons */
   
  .btn{
     display: inline-block;
-    padding: 15px 23px;
-    font-size: 24px;
+    padding: 10px 15px;
+    font-size: 22px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color:#1995ad;
     border: none;
-    border-radius: 13px;
-    box-shadow: 0 7px #999;
+    border-radius: 8px;
+    box-shadow: 0 3px #999;
 }
 
-.btn:hover {background-color: #3e8e41}
+.btn:hover {background-color: #268388}
   
 .btn:active {
-  background-color: #3e8e41;
+  background-color: #3e898e;
   box-shadow: 0 5px #666;
-  transform: translateY(3px);
+  transform: translateY(1px);
 }
  .big{
     font-size: 40px;
 }
 
  .medium{
-    font-size: 30px;
+    font-size: 20px;
+}
+.small{
+    font-size: 15px;
 }
 
 /* colours */
 
 .success{
-  color: rgb(31, 214, 98);
+  color:#1995ad;
 }
 .bg-success{
-    background-color: rgb(31, 214, 98);
+    background-color: #1995ad);
     color: white;
   }
 .info{
@@ -79,7 +87,14 @@ h1, h2, h3, h4, h5, h6{
 
 
 /* compononts */
-
+.hr-light{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 .page-form{
     border: solid 1px ghostwhite;
     background-color: whitesmoke;
@@ -144,12 +159,12 @@ form div {
     background-color: #f2f2f2;
     padding: 20px;
 }
-#signup{
+/* #signup{
     width:100%;
     background-image: url("../images/bg4.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 /* header and home page styling */
 * {
@@ -171,7 +186,7 @@ form div {
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color:  #343946;
+    background-color:  #1995ad;
     position: fixed;
     top: 0;
     width:100%;
@@ -180,17 +195,19 @@ form div {
 
 /* Style the topnav links */
 .topnav a {
-    float: left;
+    
     display: block;
+    height: 100%;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    margin: 0;
+    padding: 20px 16px;
     text-decoration: none;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #a1d6e2;
     color: black;
 }
 /* Create two unequal columns that floats next to each other */
@@ -212,8 +229,13 @@ form div {
 /* Add a card effect for articles */
 .card {
     background-color: white;
-    padding: 20px;
-    margin: 20px;
+    padding: 15px;
+    margin: 10px;
+    font-size: 14px;
+}
+.card:hover{
+    box-shadow: 3px 3px #999;
+    border-radius: 2px;
 }
 
 /* Clear floats after the columns */
@@ -228,7 +250,8 @@ form div {
 .footer {
     padding: 20px;
     text-align: center;
-    background:  #343946;
+    /* background:  #343946; */
+    background-color:  #1995ad;
     margin-top: 20px;
     color: white;
 }
@@ -276,9 +299,18 @@ form div {
 }
 
 .pagination a.active {
-    background-color: #4CAF50;
+    background-color: #1995ad;
     color: white;
-    border: 1px solid #4CAF50;
+    border: 1px solid #1995ad;
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+/* position */
+
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
