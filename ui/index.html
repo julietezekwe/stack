@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign | Up</title>
+    <title>Stackoverflow</title>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -18,66 +20,135 @@
         </nav>
 </header>
 
-
+<br>
 <div class="header">
-    <h1 >Stackoverflow <a href="#"> <button class="btn medium" style="float: right;">Ask Question</button></a></h1>
+    <h1 >Stackoverflow <a href="#"> <button data-target="question-modal" data-toggle="modal" class="btn medium" style="float: right;">Ask Question</button></a></h1>
+  
+    <div id="question-modal" class="modal">
+        <div class="modal-window">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <form >
+                <div class="row">
+                     <h3>Post a question</h3>
+                </div> 
+                <div class="row">
+                  <textarea name="question" id="question" cols="100" rows="10" placeholder="Enter your question"> </textarea>
+                </div>
+            <div class="row">
+                <button type="submit" value="Submit" class="btn medium">Post</button>
+            </div>           
+         </form>
+        </div>
+    </div>
 
   </div>
 
 <div class="row">
-  <div class="leftcolumn">
+  <div class="column">
       
-    <div class="card">
-      <h3>Question HEADING <i class="pull-right">Author, Dec 7, 2017</i> </h3>
-      
-      <div class="content" >Topic</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <span>Answers (58) <a href="" class="success">Post a response</a></span>
-    </div>
-    <div class="card">
-      <h2>Question HEADING</h2>
-      <h5>Author, Dec 7, 2017</h5>
-      <div class="content" >Topic</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <span>Answers (33) <a href="" class="success">Post a response</a></span>
-    </div>
-    <div class="card">
-      <h2>Question HEADING</h2>
-      <h5>Author, Dec 7, 2017</h5>
-      <div class="content" >Topic</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <span>Answers (13) <a href="" class="success">Post a response</a></span>
-    </div>   
+      <div class="comment-box">
+          <div class="card">
+                  <h2>Question</h2> 
+                  <div class="comment-head">
+                          <h6 class="comment-name by-author"> <a href="">Juliet Eze</a></h6>
+                          <i> <span> 1hr ago</span></i>
+                          
+                  </div>
+                  <p class="comment-content">Sunt in culpa qui officia deserunt mollit anim id
+                       est laborum consectetur adipiscing elit, sed do eiusmod 
+                       tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                       ad minim veniam, quis nostrud exercitation ullamco.
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero quaerat aut ab. 
+                       Ipsum incidunt laborum quasi necessitatibus tempora perspiciatis natus veniam quo amet a,
+                       molestiae dolorem aperiam asperiores iusto!   
+                  </p>
+  
+                  <div class="comment-head">
+                      <a href="comments.html">Reply(5)</a>
+                      <i >Likes 3</i>
+                      <i >dislikes 1</i>
+              </div>
+           </div>
+           
   </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h3>Recent Questions</h3>
-      <div ><p>Question one</p></div>
-      <div ><p>Question Two</p></div>
-      <div ><p>Question Three</p></div>
-      <div ><p>Question four</p></div>
-      <div ><p>Question one</p></div>
-      <div ><p>Question Two</p></div>
-      <div ><p>Question Three</p></div>
-      <div ><p>Question four</p></div>
-    </div>
-    <div class="card">
-      <h3>Popular Questions</h3>
-      <div ><p>Question one</p></div>
-      <div ><p>Question Two</p></div>
-      <div ><p>Question Three</p></div>
-      <div ><p>Question four</p></div>
-      <div ><p>Question one</p></div>
-      <div ><p>Question Two</p></div>
-      <div ><p>Question Three</p></div>
-      <div ><p>Question four</p></div>
+  <div class="comment-box">
+      <div class="card">
+              <h2>Question</h2> 
+              <div class="comment-head">
+                      <h6 class="comment-name by-author"><a href="">Juliet Eze</a></h6>
+                       <i><span> 1hr ago</span></i>
+                      
+              </div>
+              <p class="comment-content">Sunt in culpa qui officia deserunt mollit anim id
+                   est laborum consectetur adipiscing elit, sed do eiusmod 
+                   tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                   ad minim veniam, quis nostrud exercitation ullamco.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero quaerat aut ab. 
+                   Ipsum incidunt laborum quasi necessitatibus tempora perspiciatis natus veniam quo amet a,
+                   molestiae dolorem aperiam asperiores iusto!   
+              </p>
 
-    </div>
-    
+              <div class="comment-head">
+                  <a href="">Reply(2)</a>
+                  <i >Likes 3</i>
+                  <i >dislikes 1</i>
+          </div>
+       </div>
+       
+</div>
+    <div class="comment-box">
+        <div class="card">
+                <h2>Question</h2> 
+                <div class="comment-head">
+                        <h6 class="comment-name by-author"><a href="">Juliet Eze</a></h6>
+                        <i><span> 1hr ago</span></i>
+                        
+                </div>
+                <p class="comment-content">Sunt in culpa qui officia deserunt mollit anim id
+                     est laborum consectetur adipiscing elit, sed do eiusmod 
+                     tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                     ad minim veniam, quis nostrud exercitation ullamco.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero quaerat aut ab. 
+                     Ipsum incidunt laborum quasi necessitatibus tempora perspiciatis natus veniam quo amet a,
+                     molestiae dolorem aperiam asperiores iusto!   
+                </p>
+
+                <div class="comment-head">
+                    <a href="">Reply(2)</a>
+                    <i >Likes 3</i>
+                    <i >dislikes 1</i>
+            </div>
+         </div>
+         
+</div>
+
+<div class="comment-box">
+    <div class="card">
+            <h2>Question</h2> 
+            <div class="comment-head">
+                    <h6 class="comment-name by-author"><a href="">Juliet Eze</a></h6>
+                    <i><span> 1hr ago</span></i>
+                    
+            </div>
+            <p class="comment-content">Sunt in culpa qui officia deserunt mollit anim id
+                 est laborum consectetur adipiscing elit, sed do eiusmod 
+                 tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                 ad minim veniam, quis nostrud exercitation ullamco.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero quaerat aut ab. 
+                 Ipsum incidunt laborum quasi necessitatibus tempora perspiciatis natus veniam quo amet a,
+                 molestiae dolorem aperiam asperiores iusto!   
+            </p>
+
+            <div class="comment-head">
+                <a href="">Reply(2)</a>
+                <i >Likes 3</i>
+                <i >dislikes 1</i>
+        </div>
+     </div>
+     
+</div>  
   </div>
+ 
   <div class="center">
     <div class="pagination">
       <a href="#">&laquo;</a>

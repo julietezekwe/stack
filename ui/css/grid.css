@@ -14,7 +14,7 @@ margin: 0;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  align-items: baseline;
+  /* align-items: baseline; */
   margin-top: 1px;
   margin-bottom: 1px;
 }
